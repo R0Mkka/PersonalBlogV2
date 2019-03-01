@@ -1,13 +1,26 @@
-@import './header';
+@import './colors';
 @import './grid';
 
+@import './header';
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: $white;
     font-family: 'Open Sans', sans-serif;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
