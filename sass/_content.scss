@@ -1,0 +1,88 @@
+.content {
+    position: relative;
+    background-color: $white;
+    z-index: 5;
+
+    &__about {
+        padding: 25px 0px;
+
+        &-headline {
+
+            h2 {
+                color: $black;
+                font-size: 2em;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        &-divider {
+            height: 1px;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        &-info {
+            .photo {
+                width: 100%;
+
+                img {
+                    width: inherit;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+                }
+            }
+
+            .description {
+
+                p {
+                    color: $black;
+                    font-size: 18px;
+                    font-weight: 300;
+                    text-align: justify;
+                    text-indent: 1.5em;
+                }
+            }
+        }
+
+        &-table {
+            color: $black;
+
+            &-headline {
+                margin-top: 30px;
+
+                h2 {
+                    font-size: 2em;
+                    font-weight: 300;
+                    color: $black;
+                    text-align: center;
+                }
+            }
+
+            p {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 10px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin: 5px;
+                }
+            }
+            
+            .point {
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            .text {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+}
