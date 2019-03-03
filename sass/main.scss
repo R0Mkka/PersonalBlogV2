@@ -2,8 +2,9 @@
 @import './grid';
 
 @import './header';
-@import './content';
+@import './about';
 @import './game';
+@import './footer';
 
 html {
     height: 100%;
@@ -14,17 +15,27 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: $white;
     font-family: 'Open Sans', sans-serif;
     perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a:link {
+    color: $blue;
+}
+
+a:visited {
+    color: $purple;
 }
 
 img::selection {
