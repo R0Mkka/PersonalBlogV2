@@ -1,6 +1,5 @@
 .footer {
     position: relative;
-    top: -100px;
     width: 100vw;
     padding: 45px 0px;
     background-color: $white;
@@ -12,13 +11,11 @@
 
             h2 {
                 font-size: 2em;
-                font-weight: 300;
             }
         }
 
         &__mail {
             font-size: 1.4em;
-            font-weight: 300;
         }
 
         &__socials-list {
@@ -26,17 +23,16 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+            margin-top: 10px;
 
             p {
                 margin-top: 10px;
                 font-size: 1.4em;
-                font-weight: 300;
             }
 
             .social {
                 margin: 15px 0px;
                 font-size: 1.4em;
-                font-weight: 300;
 
                 img {
                     width: 40px;
@@ -56,6 +52,19 @@
     &__copyright {
         color: $black;
         font-size: 1.8em;
-        font-weight: 300;
+    }
+}
+
+@media(max-width: 1200px) {
+    .footer {
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__copyright {
+            text-align: center;
+        }
     }
 }

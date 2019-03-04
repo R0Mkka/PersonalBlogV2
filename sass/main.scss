@@ -1,3 +1,4 @@
+@import './loading';
 @import './colors';
 @import './grid';
 
@@ -6,18 +7,16 @@
 @import './game';
 @import './footer';
 
-html {
-    height: 100%;
-    overflow: hidden;
-}
-
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    perspective: 1px;
+    font-weight: 300;
     overflow-x: hidden;
+}
+
+* {
+    font-weight: inherit;
 }
 
 h1, h2, h3, h4, h5, h6, p {
